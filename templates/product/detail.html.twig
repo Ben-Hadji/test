@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+
+
+            <div class="container" style='margin-top: 5%; margin-bottom: 4%'>
+                <h2 style="font-family: Helvetica" class="text-center">Nos <i class='text-danger'>{{ product.nom }}</i> sont cultivés en pleine nature, sans ogm et certifiés bios </h2>
+                <div class="row justify-content-center h-100" style='margin-top: 3%'>
+                
+                    
+                <div class="col-4" style="width: 45rem; height: 100%; margin-top: 2.3%">
+                  <div class="card text-dark bg-light">
+                    <img class="card-img-top" src={{ asset('images/' ~ product.image) }} alt="image alt text here" style="height: 40rem">
+                    <div class="card-body text-center">
+                      
+                      
+                    <h3 class="card-title">{{ product.prix }}€</h3>
+                    </div>
+                  </div>
+                </div>
+                    
+                
+            </div>
+                <div class="container">
+            
+
+{% endblock  %}
